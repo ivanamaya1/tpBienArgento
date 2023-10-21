@@ -1,0 +1,442 @@
+body {
+    background: #068da9;
+    margin: 0px;
+    padding: 0%;
+}
+
+.titulo {
+    background: #ecf8f9;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #068da9;
+}
+.item-header-der {
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: 0.5s infinite bien-argento
+}
+@keyframes bien-argento {
+    0% {
+        transform: scaleX(1.0);    }
+    50% {        transform: scaleX(1.15);    }
+    100% {        transform: scaleX(1.0);    }}
+.item-header-izq {
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h2 {
+    background: #068da9;
+    color: #ecf8f9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    padding: 15px;
+
+}
+
+.padre {
+    display: grid;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-template-columns: repeat(5, 1fr);
+    background: #7e1717;
+    grid-template-rows: 1fr;
+    }
+
+.menu {
+    background: #7e1717;
+    text-align: center;}
+
+.menu-lista {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);}
+
+.ul il ol {
+    list-style: none;}
+
+.menu-lista li a {
+    color: #ecf8f9;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;}
+
+.nav ul,li {
+    display: block;
+    list-style: none;}
+.menu li a:hover {
+    background-color: #068da9;
+    padding: 5%;
+    animation: 0.5s infinite boton-menu;}
+
+.menu li ul {
+    display: none;}
+
+.menu li:hover>ul {
+    display: inline-block;
+    justify-content: center;}
+
+.lista li ul li {
+    position: relative;}
+
+@keyframes boton-menu {
+    0% {
+        transform: scaleX(1.0);    }
+
+    50% {  transform: scaleX(1.15);    }
+
+    100% {    transform: scaleX(1.0);    }}
+
+.pie{
+    display:flex;
+    justify-content:right;
+    gap: 15px;
+   
+    align-items: center;
+    padding: 0px  25px;
+    font-size: 22px;
+color: #7e1717;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.iconos {
+    display: flex;
+    column-gap: 25px;
+    font-size: 30px;
+  color:#7e1717;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.iconos a {
+    color: #7e1717;
+    size: 20px;
+   
+}
+
+.formulario a{
+    color: #7e1717;
+    text-decoration: none;
+    
+}
+.formulario:hover{
+    animation:0.5s infinite boton-formulario
+
+}
+
+.mapa-container{
+    position:relative;
+    padding-bottom: 6%;
+    height: 0;
+    overflow: hidden;
+
+}
+.mapa-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.integrantes{
+    display: grid;
+    grid-template-columns:30% 30% 30% ;
+    align-items: center;
+    justify-content:space-between;
+    color: #068da9;
+    background: #7e1717;
+    text-align: center;
+    font-size: larger;
+}
+
+/*---------------------------------------*/
+/*estilos para las paginas de provincias*/
+/*---------------------------------------*/
+.provincias{
+    color: #ecf8f9;
+    padding: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.provincias h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #7e1717;
+}
+
+.provincias h2{
+   text-align: center;
+   font-size: 28px;
+   margin-top: 20px; 
+   color: #7e1717;
+}
+
+
+
+.imagen-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 45px;
+}
+
+.imagen div {
+    display: inline-block;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.imagen h3 {
+    margin: 10px 0;
+}
+
+.imagen img {
+    width: 300px;
+    height: auto;
+}
+
+#titulo{
+    color: #ecf8f9;
+    background: #7e1717;
+}
+
+.contenedor-grid1 {/*4 recetas*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Cambiamos el número de columnas a 2 */
+    justify-content: center;  /* Centramos el contenido horizontalmente */
+    align-content: center;
+    border: 5px solid white;
+    border-radius: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor-grid2 {/*como hacer las recetas*/
+    display: grid;  
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border: 5px solid white;
+    border-radius: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor-grid2 div {
+    background-color: rgb(126,23,23);
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    align-self: center;
+}
+
+.contenedor-grid1 div {
+    background-color: rgb(126,23,23);
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    align-self: center;
+}
+
+.contenedor-grid {/*video paulacocina*/
+    display: grid;  
+    grid-template-columns: repeat(4,auto);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border: 5px solid white;
+    border-radius: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contenedor-grid div {
+    background-color: rgb(126,23,23);
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    align-self: center;
+}
+
+
+
+
+.contenedor-grid-3 {
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto / auto auto;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border: 5px solid white;
+    border-radius: 10px;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin: 20px;
+    padding: 10px;
+
+}
+
+.grid-item {
+    background-color: rgb(126,23,23);
+    border: 5px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.grid-item a{
+    color: #ecf8f9;
+}
+
+/* Estilo de grid para pantallas de tablet */
+
+@media (max-width: 1280px) {
+
+    .contenedor-grid-3 {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto / auto;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        border: 5px solid white;
+        border-radius: 10px;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 20px;
+        padding: 15px;
+        grid-template-areas: "item-1"
+                            "item-2"
+                            "item-3"
+                            "item-4"
+                            "item-5"
+                            "item-6"
+                            "item-7"
+                            "item-8"
+                            "item-9"
+                            "item-10"
+                            "item-11"
+                            "item-12"
+                            "item-13"
+                            "item-14"
+                            "item-15"
+                            "item-16";
+    }
+
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        border: 5px solid white;
+        border-radius: 10px;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 20px;
+        padding: 10px;
+    }
+   
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        list-style-type: none;
+        text-decoration: none;
+    }
+     
+    h1 {
+        font-size: 18px;
+    }
+
+}
+
+/* Estilo de grid para pantallas de moviles */
+
+@media (max-width: 720px) {
+
+    .contenedor-grid-3 {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto / auto;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        border: 5px solid white;
+        border-radius: 10px;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 20px;
+        padding: 15px;
+        grid-template-areas: "item-1"
+                            "item-2"
+                            "item-3"
+                            "item-4"
+                            "item-5"
+                            "item-6"
+                            "item-7"
+                            "item-8"
+                            "item-9"
+                            "item-10"
+                            "item-11"
+                            "item-12"
+                            "item-13"
+                            "item-14"
+                            "item-15"
+                            "item-16";
+    }
+
+    .contenedor-grid {
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        border: 5px solid white;
+        border-radius: 10px;
+        row-gap: 5px;
+        column-gap: 5px;
+        margin: 20px;
+        padding: 10px;
+    }
+   
+    .item1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        list-style-type: none;
+        text-decoration: none;
+    }
+   
+    h1 {
+        font-size: 10px;
+    }
+
+}
+
+/*.provincias-grid {
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    border: 2px solid rgb(227, 47, 149) solid;
+margin: 20px;
+px
+}
+
+.menu li {
+    list-style:none;
+   padding: 10px;
+}
+. li a {
+    display: block;
+    background-color: red;
+    color: blue;
+    color: rgb(40, 177, 195);
+    padding: 5px;
+    text-decoration: none;
+
+}*/
