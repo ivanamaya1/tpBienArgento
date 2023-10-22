@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIEN ARGENTO - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/form_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <iframe src="header.html"  frameborder="1" width="100%"></iframe>
+    </header>
+
+    <h1 align="center"><b>Contacto</b></h1>
+
+    <form action="back.html" method="get" class="formulario" id="formulario">
+
+        <fieldset class="datos"><legend>Datos personales</legend>
+            
+            <!-- Grupo Nombre -->
+            <div class="form_grupo" id="grupo_nombre">
+                <label class="form_label" for="nombre">Nombre</label>
+                <div class="form_grupo_input">
+                    <input type="text" class="form_input" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                    <!-- <i class="fa-solid fa-circle-check"></i> -->
+                </div>
+                <p class="form_input_error">El nombre solo puede contener letras y espacios.</p>
+            </div>
+            
+            <!-- Grupo Apellido -->
+            <div class="form_grupo" id="grupo_apellido">
+                <label class="form_label" for="apellido">Apellido</label>
+                <div class="form_grupo_input">
+                    <input type="text" class="form_input" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form_input_error">El apellido solo puede contener letras y espacios.</p>
+            </div>
+            
+            <!-- Grupo Correo -->
+            <div class="form_grupo" id="grupo_correo">
+                <label class="form_label" for="correo">e-mail</label>
+                <div class="form_grupo_input">
+                    <input type="email" class="form_input" id="correo" name="correo" placeholder="usuario@servidor.dominio">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form_input_error">Solo puede contener letras, números, puntos, guion bajo y arroba.</p>
+            </div>
+            
+            <!-- Grupo Fecha de nacimiento -->
+            <div class="form_grupo" id="grupo_fcnac">
+                <label class="form_label" for="fcnac">Fecha de nacimiento</label>
+                <div class="form_grupo_input">
+                    <input type="date" class="form_input" id="fcnac" name="fcnac">
+                </div>
+                <p class="form_input_error">Fecha incorrecta.</p>
+            </div>
+            
+            <!-- Grupo Contraseña -->
+            <div class="form_grupo" id="grupo_psw">
+                <label class="form_label" for="psw">Contraseña</label>
+                <div class="form_grupo_input">
+                    <input type="password" class="form_input" id="psw" name="psw" placeholder="Ingrese su contraseña">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form_input_error">8 a 16 caracteres, incluya al menos un dígito y un símbolo (!#$%&=+*~^()[]{}).</p>
+            </div>
+
+            <!-- Grupo Verificar Contraseña -->
+            <div class="form_grupo" id="grupo_psw_bis">
+                <label class="form_label" for="psw_bis">Repita su contraseña</label>
+                <div class="form_grupo_input">
+                    <input type="password" class="form_input" id="psw_bis" name="psw_bis" placeholder="Reingrese su contraseña">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form_input_error">Las contraseñas ingresadas deben coincidir.</p>
+            </div>
+
+            <!-- Grupo Telefono -->
+            <div class="form_grupo" id="grupo_tel">
+                <label class="form_label" for="tel">Teléfono</label>
+                <div class="form_grupo_input">
+                    <input type="text" class="form_input" id="tel" name="tel" placeholder="+54 (11) 5555-5555">
+                    <i class="form_validacion_estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="form_input_error">Solo puede contener el signo más (+), números, espacios, guiones y paréntesis.</p>
+            </div>
+
+        </fieldset>
+
+        <fieldset><legend>Tus gustos</legend>
+            <div class="form_grupo checkbox" id="grupo_pref">
+                <!--Todas, Vegetarianas, Veganas -->
+                <label class="form_label form_label_grupo_checkbox">
+                    Recetas preferidas
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="pref" id="pref_todas" value="todas" checked>
+                    Todas
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="pref" id="pref_veggie" value="veggie">
+                    Vegetarianas
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="pref" id="pref_vegan" value="vegan">
+                    Veganas
+                </label>
+            </div>
+            
+            <div class="form_grupo checkbox" id="grupo_intol">
+                <!--Ninguna, Celiaco(gluten), Leche (lactosa), Mani, Nueces, Huevos, Pescados, Mariscos, Soja -->
+                <label class="form_label form_label_grupo_checkbox">
+                    Alergias o intolerancias
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_ninguna" value="ninguna" checked>
+                    Ninguna
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_tacc" value="tacc">
+                    Celíaco (trigo, avena, cebada, centeno)
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_leche" value="leche">
+                    Leche (lactosa)
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_mani" value="mani">
+                    Maní
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_nueces" value="nueces">
+                    Nueces
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_huevos" value="huevos">
+                    Huevos
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_pescados" value="pescados">
+                    Pescados
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_mariscos" value="mariscos">
+                    Mariscos
+                </label>
+                <label class="form_label form_label_checkbox">
+                    <input class="form_checkbox" type="checkbox" name="intol" id="intol_soja" value="soja">
+                    Soja
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset><legend>Comentarios</legend>
+            <div class="form_grupo">
+                <textarea class="form_grupo_input" name="comentarios" rows="10" cols="55">Agradecemos sus sugerencias y cometarios para mejorar nuestro proyecto.</textarea>
+            </div>
+        </fieldset>
+        
+        <div class="form_mensaje" id="form_mensaje">
+            <p><i class="fa-solid fa-triangle-exclamation"></i><b> ERROR: </b>Complete correctamente el formulario.</p>
+        </div>
+        
+        <div class="form_grupo form_grupo_btn_enviar">
+            <button class="form_btn" type="submit">Enviar</button>
+            <p class="form_mensaje_exito" id="form_mensaje_exito">Formulario enviado exitosamente.</p>
+        </div>
+    </form>
+
+    <footer>
+        <iframe src="footer.html" frameborder="1" width="100%" height="240"></iframe>
+    </footer>
+    <script src="https://kit.fontawesome.com/3a1e8cc5d3.js" crossorigin="anonymous"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>

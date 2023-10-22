@@ -1,0 +1,162 @@
+/*CSS del documento contacto.html*/
+.formulario{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 15px;
+    padding: 15px;
+}
+
+fieldset{
+    border-radius: 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.form_label{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form_label_grupo_checkbox{
+    cursor: default;
+}
+
+.form_label_checkbox{
+    font-weight: normal;
+    padding: 3px;
+}
+
+.form_grupo_input{
+    position: relative;
+}
+
+.form_input{
+    width: 95%;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px 0px 10px;
+}
+
+.form_input:focus{
+    border: 3px solid rgba(20, 50, 219, 0.5);
+    outline: none;
+}
+
+.form_input_error{
+    font-size: small;
+    display: none;
+}
+
+.form_input_error_activo{
+    display: block;
+}
+
+.form_validacion_estado{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    opacity: 0;
+}
+
+.form_grupo_input_ok .form_validacion_estado{
+    color: green;
+    opacity: 1;
+}
+
+.form_grupo_input_ko .form_label{
+    color: red;
+    opacity: 1;
+}
+
+.form_grupo_input_ko .form_input{
+    border: 5px solid red;
+    opacity: 1;
+}
+
+.form_grupo_input_ko .form_validacion_estado{
+    color: red;
+    opacity: 1;
+}
+
+.form_mensaje, .form_grupo_btn_enviar{
+    grid-column: span 3;
+    align-items: center;
+}
+
+.form_btn{
+    height: 45px;
+    line-height: 45px;
+    width: 20%;
+    background-color: rgba(50, 205, 50, .7);
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form_mensaje{
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    display: none;
+}
+
+.form_mensaje p{
+    margin: 0px;
+}
+
+.form_mensaje_activo{
+    display: block;
+}
+
+.form_mensaje_exito{
+    color: rgb(3, 68, 3);
+    display: none;
+}
+
+.form_mensaje_exito_activo{
+    display: block;
+}
+
+.comentario {
+    font-size: smaller;
+
+}
+
+.botones{
+    font-weight: bold;
+}
+
+/*.provincias-grid {
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto auto auto auto auto;
+    border: 2px solid rgb(227, 47, 149) solid;
+margin: 20px;
+px
+}
+
+.menu li {
+    list-style:none;
+   padding: 10px;
+}
+. li a {
+    display: block;
+    background-color: red;
+    color: blue;
+    color: rgb(40, 177, 195);
+    padding: 5px;
+    text-decoration: none;
+
+}*/

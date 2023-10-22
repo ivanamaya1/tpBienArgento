@@ -164,6 +164,15 @@ color: #7e1717;
     background: #7e1717;
     text-align: center;
     font-size: larger;
+transition-property:all;
+transition-duration:0.5s ;
+transition-timing-function: linear;
+}
+.integrantes:hover{
+    background: #068da9;
+    color: #ecf8f9;
+    padding: 2px;
+    border: 0px solid #7e1717;
 }
 
 /*---------------------------------------*/
