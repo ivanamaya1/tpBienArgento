@@ -47,11 +47,26 @@ h2 {
     border-radius: 50%;
     text-decoration: none;
     margin-top: 30px;
-  }
-  
-  .boton-volver:hover {
+    }
+
+.boton-volver:hover {
     background-color: #068da9;
-  }
+}
+
+.item-header-ing{
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 3%;
+    padding: 5px;
+    border-radius: 7px;
+    color: #ecf8f9;
+    background-color: #7e1717;
+    text-decoration: none;
+}
+
+.item-header-ing:hover{
+    background-color: #068da9;
+}
 
 .padre {
     display: grid;
