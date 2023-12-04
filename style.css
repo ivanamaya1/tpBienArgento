@@ -54,16 +54,17 @@ h2 {
 }
 
 .item-header-ing{
+    display: flex;
     font-size: 22px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 3%;
-    padding: 5px;
+    padding: 8px;
     border-radius: 7px;
     color: #ecf8f9;
     background-color: #7e1717;
     text-decoration: none;
+    margin-top: 35px;
+    
 }
-
 .item-header-ing:hover{
     background-color: #068da9;
 }
