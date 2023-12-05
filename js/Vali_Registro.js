@@ -117,7 +117,7 @@ document.getElementById('fvalida').addEventListener('submit', function (event) {
 
     //var formDatadet = new FormData();
     //formData.append("usudet_documento", document.getElementById('Usu').value);
-   
+    
             
     console.log("datos del form data")
     console.log(formData.get("documento"))
